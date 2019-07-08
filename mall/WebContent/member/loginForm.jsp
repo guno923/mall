@@ -25,13 +25,13 @@
   			<div class="col-sm-3 sidebar_bg">
   				<ul>
   					<li>
-  						<i class="fas fa-thumbs-up"></i>
   						<a href="/mall/index.jsp">홈으로</a>
   					</li>
   					<li>
   						<a href="/mall/member/addMemberForm.jsp">회원가입</a>
   					</li>
   					<li>
+  						<i class="fas fa-thumbs-up"></i>
   						<a href="/mall/member/loginForm.jsp">로그인</a>
   					</li>
   					<li>
@@ -44,8 +44,22 @@
   			</div>
   			<div class="col-sm-9">
   				<div class="jumbotron">
-  				<h1>Hi My Mall</h1> 
-  				<p>쇼핑몰에서~</p> 
+  				<h1>로그인</h1>
+					<form accept-charset="UTF-8" role="form" method="post" action="">
+                            <legend>로그인</legend>
+                            <div class="input-group">
+                                <span class="input-group-addon"><i class="fa fa-user"></i></span>
+                                <input type="text" id="userid" value='' placeholder="E-mail을 입력하세요" class="form-control" />
+                            </div>
+                            <div class="input-group">
+                                <span class="input-group-addon"><i class="fa fa-lock"></i></span>
+                                <input type="password" id="password" value='' placeholder="비밀번호를 입력하세요" class="form-control" />
+                            </div>
+                            <button type="submit" id="login-submit" class="btn btn-success btn-block"/>로그인</button> <span class='text-center'><a href="" class="text-sm">비밀번호 찾기</a></span>
+                            <div class="form-group">
+                                <a href="registerForm.php" class="btn btn-warning btn-block"> 회원가입</a>
+                            </div>
+                        </form>
 				</div>
   			</div>
 		</div>
